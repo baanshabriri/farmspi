@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slideshow-container.css">
+    <link rel="stylesheet" href="contact-form.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Responsive Sticky Navbar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Responsive Carousel -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/oven_dried_bhoot_jolokia.jpeg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/lakadong_turmeric.jpeg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/smoke_dried_bhoot_jolokia.jpeg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+    <!-- Two Column Section -->
+    <section class="two-column-section">
+        <div class="container">
+            <div class="column">
+                <div class="image-container">
+                    <img src="images/perilla.jpeg" alt="Image" class="image">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Perilla Seeds</h2>
+                <p class='read_more_text show-few-lines'>
+                    <!-- <p> -->
+                    It is also known as Nei Lieh Meghalaya is a herb which belongs to mint family,
+                    Lamiaceae. The oil extracted from Perilla leaves is rich in omega 3 fatty acids. The plant overall
+                    resembles the stinging nettle, though the leaves are somewhat rounder. The flowers bloom in
+                    August-September and by November, the flowers become dry and the seeds are harvested. Nei Lieh is
+                    not the same as what is known as 'white sesame' in the rest of India. It is available in the form of
+                    perilla Seeds/ perilla.
+                </p>
+                <a href='#' onclick='readMore(this,event)'>...</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+                <h2>Perilla Seeds</h2>
+                <p class='read_more_text show-few-lines'>
+                    <!-- <p> -->
+                    It is also known as Nei Lieh Meghalaya is a herb which belongs to mint family,
+                    Lamiaceae. The oil extracted from Perilla leaves is rich in omega 3 fatty acids. The plant overall
+                    resembles the stinging nettle, though the leaves are somewhat rounder. The flowers bloom in
+                    August-September and by November, the flowers become dry and the seeds are harvested. Nei Lieh is
+                    not the same as what is known as 'white sesame' in the rest of India. It is available in the form of
+                    perilla Seeds/ perilla.
+                </p>
+                <a href='#' onclick='readMore(this,event)'>...</a>
+            </div>
+            <div class="column">
+                <div class="image-container">
+                    <img src="images/black_pepper.jpeg" alt="Image" class="image">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="column">
+                <div class="image-container">
+                    <img src="images/black_ginger.jpeg" alt="Image" class="image">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="column">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>2017</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>Lorem ipsum..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Form -->
+    <div class="form-container">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <!-- Bottom Navbar -->
+    <footer class="bottom-navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
